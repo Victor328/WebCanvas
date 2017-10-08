@@ -1,5 +1,6 @@
  <html>
  <body>
+     <button type="button" value="log out"></button>
  <script type="text/javascript">
      if(localStorage.loginCridentials)
      {
