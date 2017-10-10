@@ -17,12 +17,12 @@
         {
             echo 'Success, Redirecting...';
             echo '<script> setCookie("Metafalus_Login_Token_ID",'.$_POST['id'].');</script>';
-            //Redirect('http://metafalus.tpddns.cn/Canvas.php',false);
+            Redirect('http://metafalus.tpddns.cn/Canvas.php',false);
         }
         else
         {
             echo 'Failed, Redirecting...';
-            //Redirect('http://metafalus.tpddns.cn/');
+            Redirect('http://metafalus.tpddns.cn/');
         }
  ?>
     </p>

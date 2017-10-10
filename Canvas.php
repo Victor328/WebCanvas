@@ -3,7 +3,7 @@
 <body>
     <p id=loginTest>Rrrrrrrrrrrr!</p>
     <script>
-        if (getCookie("Metafalus_Login_Token_ID")) {
+        if (getCookie("Metafalus_Login_Token_ID"!=null)) {
             document.getElementById("loginTest").innerHTML = "Logined as"; //+getCookie("Metafalus_Login_Token_ID");
         } else {
             window.location="http://metafalus.tpddns.cn";
