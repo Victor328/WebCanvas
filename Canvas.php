@@ -4,13 +4,12 @@
     <p id=loginTest>Rrrrrrrrrrrr!</p>
     <script>
         if (getCookie("Metafalus_Login_Token_ID").empty()) {
+            alert("No Cookies");
             window.location("http://metafalus.tpddns.cn");
         } else {
+            alert("Got Cookies");
             document.getElementById("loginTest").innerHTML="Logined as"+getCookie("Metafalus_Login_Token_ID");
         }
-
-    </script>
-    <script>
         function getCookie(cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
