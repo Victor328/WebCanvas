@@ -4,7 +4,7 @@
     <p id=loginTest>Rrrrrrrrrrrr!</p>
     <script  type="text/javascript">
         if (getCookie("Metafalus_Login_Token_ID").length!=0) {
-            document.getElementById("loginTest").innerHTML = "Logined as"; //+getCookie("Metafalus_Login_Token_ID");
+            document.getElementById("loginTest").innerHTML = "Logined as"+getCookie("Metafalus_Login_Token_ID");
         } else {
             window.location="http://metafalus.tpddns.cn";
         }
