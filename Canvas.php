@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    <p id=loginTest></p>
+    <p id=loginTest>Rrrrrrrrrrrr!</p>
     <script>
         if (getCookie("Metafalus_Login_Token_ID").empty()) {
             window.location("http://metafalus.tpddns.cn");
