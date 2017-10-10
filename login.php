@@ -1,14 +1,15 @@
  <html>
  <body>
      <button type="button" value="log out"></button>
+     <p>Login </p>
  <script type="text/javascript">
      if(localStorage.loginCridentials)
      {
-	document.write(localStorage.loginCridentials);
+//	document.write(localStorage.loginCridentials);
      }
      else
      {
-	document.write("No Cookies!");
+//	document.write("No Cookies!");
      }
      localStorage.loginCridentials="COOKIES!!";
  </script>
@@ -20,11 +21,11 @@
      $row=mysqli_fetch_assoc($res);
      if(strcmp($row['password'],$_POST['pwd'])==0)
      {
-	echo 'true';
+	echo 'Success, Redirecting...';
      }
      else
      {
-	echo 'false';
+	echo 'Failed, Redirecting...';
      }
  ?>
  </body>
