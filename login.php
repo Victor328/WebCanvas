@@ -1,19 +1,9 @@
- <html>
- <body>
-     <button type="button" value="log out"></button>
-     <p>Login </p>
- <script type="text/javascript">
-     if(localStorage.loginCridentials)
-     {
-//	document.write(localStorage.loginCridentials);
-     }
-     else
-     {
-//	document.write("No Cookies!");
-     }
-     localStorage.loginCridentials="COOKIES!!";
- </script>
- <?php
+<html>
+
+<body>
+    <button type="button" value="log out"></button>
+    <p>Login
+    <?php
      $QueryCMD="SELECT password FROM login WHERE username = '";
      $QueryCMD=$QueryCMD.$_POST['id']."'";
      $mysqli=mysqli_connect("localhost","php_server","melodies","web_metafalus");
@@ -28,5 +18,16 @@
 	echo 'Failed, Redirecting...';
      }
  ?>
- </body>
- </html> 
+    </p>
+    <script type="text/javascript">
+        if (localStorage.loginCridentials) {
+            //	document.write(localStorage.loginCridentials);
+        } else {
+            //	document.write("No Cookies!");
+        }
+        localStorage.loginCridentials = "COOKIES!!";
+
+    </script>
+</body>
+
+</html>
