@@ -16,7 +16,7 @@
         if(strcmp($row['password'],$_POST['pwd'])==0)
         {
             echo 'Success, Redirecting...';
-            echo '<script type="text/javascript"> setCookie("Metafalus_Login_Token_ID",'.$_POST['id'].');</script>';
+            setcookie("Metafalus_Login_Token_ID", $_POST['id'], time()+3600);
             Redirect('http://metafalus.tpddns.cn/Canvas.php',false);
         }
         else
@@ -26,15 +26,6 @@
         }
  ?>
     </p>
-    <script type="text/javascript">
-        function setCookie(cname, cvalue) {
-            var d = new Date();
-            d.setTime(d.getTime() + 86400000);
-            var expires = "expires=" + d.toUTCString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
-
-    </script>
 </body>
 
 </html>
