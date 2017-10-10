@@ -16,7 +16,7 @@
         if(strcmp($row['password'],$_POST['pwd'])==0)
         {
             echo 'Success, Redirecting...';
-            echo '<script> setCookie("Metafalus_Login_Token_ID",'.$_POST['id'].');</script>';
+            echo '<script type="text/javascript"> setCookie("Metafalus_Login_Token_ID",'.$_POST['id'].');</script>';
             Redirect('http://metafalus.tpddns.cn/Canvas.php',false);
         }
         else
